@@ -66,8 +66,8 @@ public class SignupActivity extends AppCompatActivity {
                                             User u = new User();
                                             u.setName(FullNameText());
                                             u.setEmail(EmailText());
-                                            FirebaseDatabase.getInstance().getReference().child("Users").child(my_uid).push().setValue(u);
-                                            FirebaseDatabase.getInstance().getReference().child("Accepted").child(my_uid).child("empty").push().setValue(".");
+                                            FirebaseDatabase.getInstance().getReference().child("Users").child(my_uid).setValue(u);
+                                            FirebaseDatabase.getInstance().getReference().child("Accepted").child(my_uid).child("empty").setValue(".");
 
                                             FirebaseDatabase.getInstance().getReference().child("Users").addListenerForSingleValueEvent(new ValueEventListener() {
                                                 @Override
