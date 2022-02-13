@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DateGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">Username</string>
+    <string name="name">Firstname</string>
+    <string name="surname">Lastname</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="looking_for">Looking for</string>
+    <string name="profile_image">Profile Images</string>
+    <string name="log_out">Log out</string>
+    <string name="passtost">Please insert your password</string>
+    <string name="usernametost">Please insert your username</string>
+    <string name="FullIsEmpty">Please enter the username.</string>
+    <string name="PasswordIsEmpty">Please fill the password.</string>
+    <string name="CheckEmail">Please check your email box.</string>
+    <string name="setting">Setting</string>
+</resources>

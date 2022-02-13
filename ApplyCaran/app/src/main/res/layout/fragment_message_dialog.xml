@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MessageDialog">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false"
+        android:id="@+id/MoreExplainLayout"
+        android:hint="   توضیحات بیشتر برای کارشناسان"
+        app:hintTextColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/FragmentQuestion1TextView"
+        android:layout_marginTop="45dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/MoreExplain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textAllCaps="true"
+            android:keyboardNavigationCluster="true"
+            android:textColorHint="@color/black"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="inherit"
+            android:drawablePadding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_below="@+id/MoreExplainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/DeleteDialog"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="#FF0000"
+            android:text="بستن"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/EnterDialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/blue"
+            android:text="ثبت"
+            android:textAlignment="inherit"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

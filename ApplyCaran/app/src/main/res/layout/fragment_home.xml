@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dimo.applycaran.View.Fragment.HomeFragment"
+    tools:ignore="ContentDescription"
+    android:background="@drawable/simple_back">
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/AllSeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/AllSeenTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You've visited all users."
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            android:textSize="25dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/btnsignin_gradient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reload"
+            android:textAllCaps="false"
+            android:layout_below="@+id/AllSeenTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/AllSeenBtn"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/AllNotSeen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <me.thanel.swipeactionview.SwipeActionView
+            android:id="@+id/swipe_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:sav_tools_previewRipple="swipeLeft">
+
+            <ImageView style="@style/Icon" />
+            <ImageView
+                style="@style/Icon"
+                android:layout_gravity="end|center_vertical" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="20dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/UserImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:id="@+id/IdUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:layout_margin="15dp"
+                        android:textColor="@color/white"
+                        android:text="Username"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </me.thanel.swipeactionview.SwipeActionView>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "498150331466",
+    "firebase_url": "https://dategame-ef52a-default-rtdb.firebaseio.com",
+    "project_id": "dategame-ef52a",
+    "storage_bucket": "dategame-ef52a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498150331466:android:9ceb601e181b8e6fb402b3",
+        "android_client_info": {
+          "package_name": "dimo.applycaran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498150331466-u12fga83i4a9rpd89al3o70l4a378f5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8MVIwoZ5CbnCssrDg4a9A-A-9eUzw6bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498150331466-u12fga83i4a9rpd89al3o70l4a378f5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
